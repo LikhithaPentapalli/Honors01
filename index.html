@@ -1,11 +1,87 @@
-<html>
-  <head>
-    <title>
-      Resume Creation
-    </title>
-  </head>
-  <body>
-    <h1>Want To Create a Resume</h1>
-    <a href="Resume.html"><button>Enter</button></a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <style>
+        h1{
+            text-align: center;
+           
+        }
+        label {
+            display: block;
+            margin: 0;
+            text-align: center;
+        }
+        input{
+            margin: 5px;
+        }
+        fieldset{
+            width: 50%;
+            margin: 0 auto;
+        }
+        p{
+            text-align: center;
+        }
+        body {
+    background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_800,q_75,w_1200/v1/clients/newportri-redesign/Gurneys_Credit_DiscoverNewport_15_9f7520cb-c5dd-4d00-b796-f86083d2b394.jpg");
+    background-repeat:repeat;
+    background-size:cover;
+
+}
+.welcome1{
+  font-style: italic;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: scroll 20s linear;
+ display:block;
+ width: 50%;
+ 
+
+}
+.welcome{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:block;
+    width:100%;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+  @keyframes scroll {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(300%);
+    }
+  }
+   
+    p,label{
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Coffee House</h1>
+    <p class="established">Est. 2025</p>
+    <div class="welcome">
+    <p class="welcome1">Welcome to Best coffee house in town</p>
+    </div>  
+    <p >Please do login to find the menu</p>
+    <form action="menu1.html" method="get">
+    <fieldset>
+        <label>
+            Username: <input required type="text" id="name" name="name" placeholder="Name">
+            <br>
+            Password: <input required type="password" id="password" name="password" placeholder="Password">
+            <br>
+        <button type="submit">Login</button>
+        </label>
+    </fieldset>
+</body>
 </html>

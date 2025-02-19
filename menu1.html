@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <style>
+        body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+  input-security:none;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
+button{
+   margin: 0 auto 20px auto;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAFE MENU</h1>
+        <hr>
+        <form action = "order.html" method = "get">
+        <section>
+          <h2>Coffee</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
+          <article class="item">
+            <p class="flavor"><input type="checkbox" name="option" />Filter Coffee</p><p class="price">20.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor"><input type="checkbox" name="option"/>Cold Coffee</p><p class="price">50.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor"><input type="checkbox" name="option" />Instant Coffee</p><p class="price">25.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor"><input type="checkbox" name="option" />Indian Espresso</p><p class="price">40.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor"><input type="checkbox" name="option"/>Madras Coffee</p><p class="price">30.00</p>
+          </article>
+        </section>
+        <section>
+            <h2>Tea</h2>
+            <h1>☕</h1>
+            <article class="item">
+              <p class="flavor"><input type="checkbox" name="option" />Simple Tea</p><p class="price">10.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor"><input type="checkbox" name="option"/>Green Tea</p><p class="price">20.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor"><input type="checkbox"name="option" />Lemon Tea</p><p class="price">15.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor"><input type="checkbox"name="option" />Herbal Tea</p><p class="price">20.00</p>
+            </article>
+            <article class="item">
+              <p class="flavor"><input type="checkbox"name="option" />Masala Tea</p><p class="price">15.00</p>
+            </article>
+          </section>
+        <section>
+          <h2>Desserts</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
+          <article class="item">
+            <p class="dessert"><input type="checkbox" name="option"/>Ice Cream</p><p class="price">25.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert"><input type="checkbox" name="option"/>Pastry</p><p class="price">45.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert"><input type="checkbox" name="option"/>Cheesecake</p><p class="price">50.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert"><input type="checkbox"name="option" />Donut</p><p class="price">35.00</p>
+          </article>
+        </section>
+        <button type="submit">Order</button>
+        </form>
+      </main>
+      <hr class="bottom-line">
+      <footer>
+        <p>
+          Back to <a href="index.html" target="_blank">Home</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
